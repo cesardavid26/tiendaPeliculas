@@ -23,3 +23,7 @@ C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\obj\Debug\Tienda.csproj.CoreC
 C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\obj\Debug\Tienda.csproj.CopyComplete
 C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\obj\Debug\Tienda.exe
 C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\obj\Debug\Tienda.pdb
+C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\bin\Debug\Tienda.exe.manifest
+C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\bin\Debug\Tienda.application
+C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\obj\Debug\Tienda.exe.manifest
+C:\Users\Cesar Carvajal\source\repos\Tienda\Tienda\obj\Debug\Tienda.application

@@ -29,6 +29,7 @@ namespace Tienda
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,18 +45,23 @@ namespace Tienda
             this.dgvPeliculas = new System.Windows.Forms.DataGridView();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(306, 9);
+            this.label1.Font = new System.Drawing.Font("Lucida Calligraphy", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(242, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 33);
+            this.label1.Size = new System.Drawing.Size(334, 36);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TIENDA MUVI";
+            this.label1.Text = "Los Hermanos Cohen";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -176,7 +182,7 @@ namespace Tienda
             this.dgvPeliculas.AllowUserToAddRows = false;
             this.dgvPeliculas.AllowUserToDeleteRows = false;
             this.dgvPeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPeliculas.Location = new System.Drawing.Point(466, 103);
+            this.dgvPeliculas.Location = new System.Drawing.Point(393, 131);
             this.dgvPeliculas.Name = "dgvPeliculas";
             this.dgvPeliculas.ReadOnly = true;
             this.dgvPeliculas.Size = new System.Drawing.Size(412, 201);
@@ -188,7 +194,7 @@ namespace Tienda
             this.btnBuscar.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnBuscar.Location = new System.Drawing.Point(666, 59);
+            this.btnBuscar.Location = new System.Drawing.Point(593, 94);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(103, 31);
             this.btnBuscar.TabIndex = 13;
@@ -198,17 +204,45 @@ namespace Tienda
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(466, 63);
+            this.txtBuscar.Location = new System.Drawing.Point(393, 98);
             this.txtBuscar.Multiline = true;
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(194, 25);
             this.txtBuscar.TabIndex = 14;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Tienda.Properties.Resources.ret;
+            this.pictureBox2.Location = new System.Drawing.Point(571, 5);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 45);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 16;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Tienda.Properties.Resources.efe;
+            this.pictureBox1.Location = new System.Drawing.Point(188, 5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(54, 45);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 402);
+            this.ClientSize = new System.Drawing.Size(823, 359);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtBuscar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.dgvPeliculas);
@@ -228,6 +262,8 @@ namespace Tienda
             this.Text = "TIENDA DE PELICULAS";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeliculas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,6 +286,9 @@ namespace Tienda
         private System.Windows.Forms.DataGridView dgvPeliculas;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtBuscar;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 
