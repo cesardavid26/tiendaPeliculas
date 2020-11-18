@@ -62,7 +62,7 @@ namespace Tienda
             this.label1.Size = new System.Drawing.Size(334, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Los Hermanos Cohen";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -73,7 +73,7 @@ namespace Tienda
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -94,7 +94,7 @@ namespace Tienda
             this.label4.Size = new System.Drawing.Size(96, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Descripción:";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            //this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-11-2020 a las 20:14:03
+-- Tiempo de generación: 19-11-2020 a las 00:27:30
 -- Versión del servidor: 10.4.14-MariaDB
 -- Versión de PHP: 7.4.11
 
@@ -29,7 +29,7 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `PeliculaAddOrEdit` (`_idpelicula` I
 IF _idpelicula = 0 THEN
     INSERT INTO Pelicula (nombre, genero, descripcion, año)
     VALUES (_nombre, _genero, _descripcion, _año);
-else
+ELSE
     UPDATE pelicula
 	SET
        nombre = _nombre,
@@ -37,7 +37,7 @@ else
        descripcion = _descripcion,
        año = _año
 	WHERE idpelicula = _idpelicula;
-end if;
+END IF;
 END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `PeliculaDeleteById` (`_peliculaid` INT)  BEGIN
@@ -89,7 +89,8 @@ INSERT INTO `pelicula` (`idpelicula`, `nombre`, `genero`, `descripcion`, `año`)
 (1, 'tenet', 'ciencia ficcion', 'una peli de nolan', '2020'),
 (2, 'hereditary', 'terror', 'una familia sufre suscesos extraños despues d', '2018'),
 (3, 'midsommar', 'terror', 'culto asesino', '2019'),
-(4, 'ted', 'comedia', 'osito ted grosero', '2012');
+(4, 'ted', 'comedia', 'osito ted grosero', '2012'),
+(6, 'django sin cadenas', 'western', 'esclavo y aleman', '2012');
 
 --
 -- Índices para tablas volcadas
@@ -109,7 +110,7 @@ ALTER TABLE `pelicula`
 -- AUTO_INCREMENT de la tabla `pelicula`
 --
 ALTER TABLE `pelicula`
-  MODIFY `idpelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `idpelicula` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
